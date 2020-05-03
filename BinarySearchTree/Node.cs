@@ -8,14 +8,15 @@ namespace BinarySearchTree
 {
     class Node<T> where T: IComparable
     {
-        T data;
-        int? linkOne;
-        int? linkTwo;
-        public Node(T data)
+        public T data;
+        public int key;
+        public List<Node<T>> links;
+        public Node(int key,T data)
         {
+            this.key = key;
             this.data = data;
-            this.linkOne = null;
-            this.linkTwo = null;
+            links = new List<Node<T>>() { null,null};
         }
+        
     }
 }
