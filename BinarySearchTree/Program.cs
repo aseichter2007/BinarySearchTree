@@ -23,7 +23,19 @@ namespace BinarySearchTree
             test.BinaryAdd(-8,"!!!!!!");
             test.BinaryAdd(-5,"11111");
 
+            BinarySearchTree<string> test2 = new BinarySearchTree<string>("Um ");
+            test2.BinaryAdd(1, "I ");
+            test2.BinaryAdd(10, "think ");
+            test2.BinaryAdd(7, "this  ");
+            test2.BinaryAdd(5, "might  ");
+            test2.BinaryAdd(2, "break. ");
+            test2.BinaryAdd(17, "Yay ");
+            test2.BinaryAdd(105, "it ");
+            test2.BinaryAdd(3, "works!");
+
+
             Console.WriteLine(tester(test));
+            Console.WriteLine(tester(test2));
             Console.ReadLine();
         }
         public static string tester(BinarySearchTree<string> test)
